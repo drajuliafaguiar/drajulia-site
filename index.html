@@ -12,6 +12,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Top bar with quick contact and social links -->
+    <div class="top-bar">
+      <div class="container top-bar-wrapper">
+        <div class="top-message">
+          <!-- A friendly callout could go here; left blank for now -->
+        </div>
+        <div class="social-icons">
+          <!-- WhatsApp icon -->
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Dra.%20J%C3%BAlia,%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" aria-label="WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.46 1.34 4.99L2 22l5.12-1.34c1.49.8 3.17 1.23 4.88 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.5 2.04 12 2.04z" fill="#25D366" />
+              <path d="M17.15 14.78c-.24-.12-1.45-.72-1.67-.8-.22-.08-.38-.12-.54.12-.16.24-.62.8-.76.96-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.18-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.38.1-.5.1-.1.24-.24.36-.36.12-.12.16-.2.24-.32.08-.12.04-.24-.02-.36-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42-.14 0-.3-.02-.46-.02-.16 0-.38.06-.58.28-.2.22-.76.74-.76 1.8s.78 2.08.88 2.22c.1.14 1.54 2.34 3.74 3.28 2.2.94 2.2.62 2.6.58.4-.04 1.3-.54 1.48-1.06.18-.52.18-.96.12-1.06-.06-.1-.22-.16-.46-.28z" fill="#fff" />
+            </svg>
+          </a>
+          <!-- Instagram icon -->
+          <a href="https://instagram.com/drajuliafaguiar" target="_blank" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" fill="#E4405F" />
+              <circle cx="12" cy="12" r="5" stroke="#fff" stroke-width="2" fill="none" />
+              <circle cx="17.5" cy="6.5" r="1.5" fill="#fff" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- Header -->
     <header class="site-header">
       <div class="container header-wrapper">
@@ -20,7 +46,9 @@
           <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#informacoes">Informações</a></li>
+            <li><a href="#specialties">Especialidades</a></li>
+            <li><a href="#sintomas">Sintomas</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
             <li><a href="#agendamento">Agendamento</a></li>
           </ul>
         </nav>
@@ -90,95 +118,316 @@
       </div>
     </section>
 
-    <!-- Informações Section -->
-    <section id="informacoes" class="section infos-section">
+    <!-- Especialidades Section -->
+    <section id="specialties" class="section specialties-section">
       <div class="container">
-        <h3>Informações para Pacientes</h3>
-        <div class="info-cards">
-          <div class="info-card">
+        <h3>Especialidades</h3>
+        <div class="cards-grid">
+          <div class="card">
             <div class="icon-wrapper">
-              <!-- Heart icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 64 64"
-                width="64"
-                height="64"
-              >
-                <path
-                  d="M32 56s20-12 20-30c0-7.6-6.2-14-14-14-4.8 0-9 2.4-11.3 6C23 14.4 18.8 12 14 12 6.2 12 0 18.4 0 26c0 18 20 30 20 30s.2.1.5.3L32 56z"
-                  fill="#A6192E"
-                />
+              <!-- Prevention icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <path d="M32 4l24 8v18c0 18-12 26-24 30-12-4-24-12-24-30V12l24-8z" fill="#023E8A" />
+                <path d="M32 18v14l10 6" stroke="#C9A66B" stroke-width="3" fill="none" />
               </svg>
             </div>
-            <h4>Doenças do Coração</h4>
-            <p>
-              Conheça as principais patologias cardíacas, sintomas, diagnóstico e
-              opções de tratamento.
-            </p>
-            <a href="#" class="info-link">Saiba Mais</a>
+            <h4>Prevenção Cardiovascular</h4>
+            <p>Check-ups regulares e orientações para prevenir doenças e manter o coração saudável.</p>
           </div>
-          <div class="info-card">
+          <div class="card">
             <div class="icon-wrapper">
-              <!-- Shield icon for prevenção -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 64 64"
-                width="64"
-                height="64"
-              >
-                <path
-                  d="M32 4l24 8v18c0 18-12 26-24 30-12-4-24-12-24-30V12l24-8z"
-                  fill="#023E8A"
-                />
-                <path
-                  d="M32 18v14l10 6"
-                  stroke="#C9A66B"
-                  stroke-width="3"
-                  fill="none"
-                />
+              <!-- Chronic syndromes icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <path d="M32 56s20-12 20-30c0-7.6-6.2-14-14-14-4.8 0-9 2.4-11.3 6C23 14.4 18.8 12 14 12 6.2 12 0 18.4 0 26c0 18 20 30 20 30s.2.1.5.3L32 56z" fill="#A6192E" />
               </svg>
             </div>
-            <h4>Saúde Preventiva</h4>
-            <p>
-              Dicas de alimentação, exercícios e hábitos saudáveis para manter seu
-              coração em dia.
-            </p>
-            <a href="#" class="info-link">Saiba Mais</a>
+            <h4>Síndromes Coronarianas Crônicas</h4>
+            <p>Diagnóstico e tratamento individualizado das síndromes coronarianas crônicas.</p>
           </div>
-          <div class="info-card">
+          <div class="card">
             <div class="icon-wrapper">
-              <!-- Running heart icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 64 64"
-                width="64"
-                height="64"
-              >
-                <path
-                  d="M24 12c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8z"
-                  fill="#A6192E"
-                />
-                <path
-                  d="M44 12c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8z"
-                  fill="#023E8A"
-                />
-                <polyline
-                  points="4,36 14,36 20,30 28,42 40,24 50,36 60,36"
-                  fill="none"
-                  stroke="#C9A66B"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                  stroke-linecap="round"
-                />
+              <!-- Check-up icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <rect x="12" y="12" width="40" height="40" rx="8" fill="#A6192E" />
+                <polyline points="20,32 28,40 44,24" fill="none" stroke="#C9A66B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h4>Esporte e Coração</h4>
-            <p>
-              Avaliação e orientações para prática esportiva segura, incluindo
-              atletas amadores e profissionais.
-            </p>
-            <a href="#" class="info-link">Saiba Mais</a>
+            <h4>Check-up e Avaliação</h4>
+            <p>Avaliação completa do coração com exames complementares e acompanhamento.</p>
           </div>
+          <div class="card">
+            <div class="icon-wrapper">
+              <!-- Sports icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="20" cy="20" r="12" fill="#A6192E" />
+                <path d="M44 44c0-8.8-7.2-16-16-16" stroke="#023E8A" stroke-width="6" fill="none" stroke-linecap="round" />
+                <path d="M12 44l40 0" stroke="#C9A66B" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h4>Avaliação para Atividade Física</h4>
+            <p>Consultas para atletas e praticantes de esportes, garantindo segurança durante o exercício.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sintomas Section -->
+    <section id="sintomas" class="section symptoms-section alt-bg">
+      <div class="container">
+        <h3>Sintomas e Indicações</h3>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="icon-wrapper">
+              <!-- Chest pain icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="32" r="20" fill="#A6192E" />
+                <path d="M24 28h16l-8 12z" fill="#C9A66B" />
+              </svg>
+            </div>
+            <h4>Dor no Peito</h4>
+            <p>Desconforto ou dor torácica deve ser investigado rapidamente por um especialista.</p>
+          </div>
+          <div class="card">
+            <div class="icon-wrapper">
+              <!-- Shortness of breath icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <path d="M16 32c0-8.8 7.2-16 16-16s16 7.2 16 16" fill="#023E8A" />
+                <path d="M12 44h40" stroke="#C9A66B" stroke-width="4" />
+              </svg>
+            </div>
+            <h4>Falta de Ar</h4>
+            <p>Dificuldade para respirar durante atividades ou em repouso merece atenção médica.</p>
+          </div>
+          <div class="card">
+            <div class="icon-wrapper">
+              <!-- Palpitations icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <path d="M32 56s20-12 20-30c0-7.6-6.2-14-14-14-4.8 0-9 2.4-11.3 6C23 14.4 18.8 12 14 12 6.2 12 0 18.4 0 26c0 18 20 30 20 30s.2.1.5.3L32 56z" fill="#A6192E" />
+                <polyline points="20,32 28,36 32,28 40,40 48,32" fill="none" stroke="#C9A66B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h4>Palpitações</h4>
+            <p>Batimentos irregulares ou acelerados podem ser sinal de arritmia.</p>
+          </div>
+          <div class="card">
+            <div class="icon-wrapper">
+              <!-- Fatigue icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <rect x="12" y="20" width="40" height="24" rx="6" fill="#023E8A" />
+                <circle cx="32" cy="32" r="6" fill="#C9A66B" />
+              </svg>
+            </div>
+            <h4>Fadiga e Cansaço</h4>
+            <p>Cansaço excessivo sem causa aparente pode indicar problemas no sistema cardiovascular.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais Section -->
+    <section id="diferenciais" class="section differentiators-section">
+      <div class="container">
+        <h3>Por que escolher a Dra. Júlia?</h3>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="icon-wrapper">
+              <!-- Humanized care icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="20" r="10" fill="#A6192E" />
+                <path d="M16 46c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="#023E8A" stroke-width="6" fill="none" />
+              </svg>
+            </div>
+            <h4>Atendimento Humanizado</h4>
+            <p>Escuta atenta e acolhimento em todas as etapas do seu cuidado.</p>
+          </div>
+          <div class="card">
+            <div class="icon-wrapper">
+              <!-- Science icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="32" r="20" fill="#023E8A" />
+                <circle cx="32" cy="32" r="8" fill="#C9A66B" />
+              </svg>
+            </div>
+            <h4>Atualização Científica</h4>
+            <p>Tratamentos baseados nas evidências e diretrizes mais recentes.</p>
+          </div>
+          <div class="card">
+            <div class="icon-wrapper">
+              <!-- Technology icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <rect x="8" y="16" width="48" height="32" rx="4" fill="#A6192E" />
+                <circle cx="32" cy="32" r="6" fill="#C9A66B" />
+              </svg>
+            </div>
+            <h4>Tecnologia Avançada</h4>
+            <p>Equipamentos modernos para diagnósticos precisos e seguros.</p>
+          </div>
+          <div class="card">
+            <div class="icon-wrapper">
+              <!-- Continuous care icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <path d="M20 32a12 12 0 0 1 24 0" stroke="#A6192E" stroke-width="4" fill="none" stroke-linecap="round" />
+                <polyline points="20 32 20 44 12 44" stroke="#023E8A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <polyline points="44 32 44 20 52 20" stroke="#023E8A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h4>Acompanhamento Contínuo</h4>
+            <p>Suporte e orientação mesmo após a consulta, para seu bem‑estar total.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section id="como-funciona" class="section steps-section alt-bg">
+      <div class="container">
+        <h3>Como Funciona</h3>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-icon">
+              <!-- Calendar icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <rect x="8" y="12" width="48" height="40" rx="6" fill="#023E8A" />
+                <rect x="8" y="20" width="48" height="32" rx="6" fill="#A6192E" />
+                <line x1="16" y1="28" x2="48" y2="28" stroke="#C9A66B" stroke-width="4" />
+              </svg>
+            </div>
+            <h4>Agende sua Consulta</h4>
+            <p>Escolha a data e horário disponíveis por meio do site ou WhatsApp.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">
+              <!-- Video call icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <rect x="12" y="16" width="40" height="32" rx="4" fill="#A6192E" />
+                <polygon points="38,32 48,24 48,40" fill="#C9A66B" />
+              </svg>
+            </div>
+            <h4>Realize a Consulta</h4>
+            <p>Atendimento presencial ou online com avaliação detalhada de sua saúde cardiovascular.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">
+              <!-- Heart monitor icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="32" r="24" fill="#023E8A" />
+                <polyline points="16,32 24,32 28,40 36,16 40,32 48,32" fill="none" stroke="#C9A66B" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h4>Acompanhamento Contínuo</h4>
+            <p>Receba orientações personalizadas e acompanhe sua evolução de perto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Público-Alvo Section -->
+    <section id="publico-alvo" class="section audience-section">
+      <div class="container">
+      <h3>Para quem é?</h3>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <div class="audience-icon">
+            <!-- Risk factors icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+              <circle cx="20" cy="20" r="12" fill="#A6192E" />
+              <rect x="32" y="20" width="16" height="24" rx="4" fill="#023E8A" />
+              <circle cx="40" cy="40" r="4" fill="#C9A66B" />
+            </svg>
+          </div>
+          <h4>Pessoas com fatores de risco</h4>
+          <p>Quem tem hipertensão, diabetes, colesterol alto ou histórico familiar de doenças cardiovasculares.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">
+            <!-- Symptoms icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+              <circle cx="32" cy="16" r="10" fill="#023E8A" />
+              <rect x="20" y="32" width="24" height="20" rx="6" fill="#A6192E" />
+              <circle cx="32" cy="42" r="4" fill="#C9A66B" />
+            </svg>
+          </div>
+          <h4>Pessoas com sintomas</h4>
+          <p>Quem apresenta dor no peito, palpitações, falta de ar ou cansaço sem causa aparente.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">
+            <!-- Athletes icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+              <path d="M32 8a8 8 0 0 1 8 8v8h-8z" fill="#C9A66B" />
+              <rect x="24" y="24" width="16" height="24" rx="4" fill="#023E8A" />
+              <path d="M16 48h32" stroke="#A6192E" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h4>Atletas e esportistas</h4>
+          <p>Praticantes de atividade física que desejam garantir segurança e otimizar o desempenho.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="section testimonials-section alt-bg">
+      <div class="container">
+        <h3>Depoimentos</h3>
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <p class="quote">“A Dra. Júlia é extremamente atenciosa e explicou tudo com clareza. Senti-me segura e acolhida desde o primeiro contato.”</p>
+            <p class="author">— Maria S.</p>
+          </div>
+          <div class="testimonial">
+            <p class="quote">“Profissional dedicada e atualizada. O acompanhamento contínuo me ajudou a melhorar minha qualidade de vida.”</p>
+            <p class="author">— Carlos T.</p>
+          </div>
+          <div class="testimonial">
+            <p class="quote">“Excelente experiência! As orientações foram fundamentais para retomar minhas atividades físicas com segurança.”</p>
+            <p class="author">— Ana L.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog-section">
+      <div class="container">
+        <h3>Artigos e Dicas</h3>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <h4>Alimentação saudável para um coração forte</h4>
+            <p>Conheça os principais alimentos que ajudam a manter a saúde cardiovascular em dia.</p>
+            <a href="#" class="read-more">Ler mais</a>
+          </div>
+          <div class="blog-card">
+            <h4>Como reconhecer os sinais de infarto</h4>
+            <p>Entenda os sintomas que exigem atenção imediata e saiba como agir em emergências.</p>
+            <a href="#" class="read-more">Ler mais</a>
+          </div>
+          <div class="blog-card">
+            <h4>Exercícios seguros para iniciantes</h4>
+            <p>Dicas de atividades físicas adequadas para quem está começando a praticar exercícios.</p>
+            <a href="#" class="read-more">Ler mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section alt-bg">
+      <div class="container">
+        <h3>Perguntas Frequentes</h3>
+        <div class="faq-list">
+          <details>
+            <summary>Quando devo procurar um cardiologista?</summary>
+            <p>Recomenda‑se consultar um cardiologista a partir dos 35 anos ou antes em caso de fatores de risco ou sintomas como dor no peito, falta de ar ou palpitações.</p>
+          </details>
+          <details>
+            <summary>O que levar para a primeira consulta?</summary>
+            <p>Traga seus documentos pessoais, exames recentes, lista de medicamentos em uso e anote sintomas ou dúvidas para otimizar o atendimento.</p>
+          </details>
+          <details>
+            <summary>Como funciona a consulta online?</summary>
+            <p>A consulta online é realizada por videochamada, com avaliação clínica e orientações personalizadas. É necessário acesso à internet e ambiente tranquilo.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -228,6 +477,15 @@
         </div>
       </div>
     </footer>
+    <!-- Floating WhatsApp button -->
+    <div class="whatsapp-floating">
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Dra.%20J%C3%BAlia,%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" aria-label="WhatsApp">
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.46 1.34 4.99L2 22l5.12-1.34c1.49.8 3.17 1.23 4.88 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.5 2.04 12 2.04z" fill="#25D366" />
+          <path d="M17.15 14.78c-.24-.12-1.45-.72-1.67-.8-.22-.08-.38-.12-.54.12-.16.24-.62.8-.76.96-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.18-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.38.1-.5.1-.1.24-.24.36-.36.12-.12.16-.2.24-.32.08-.12.04-.24-.02-.36-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42-.14 0-.3-.02-.46-.02-.16 0-.38.06-.58.28-.2.22-.76.74-.76 1.8s.78 2.08.88 2.22c.1.14 1.54 2.34 3.74 3.28 2.2.94 2.2.62 2.6.58.4-.04 1.3-.54 1.48-1.06.18-.52.18-.96.12-1.06-.06-.1-.22-.16-.46-.28z" fill="#fff" />
+        </svg>
+      </a>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
