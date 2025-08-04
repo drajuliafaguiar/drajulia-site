@@ -125,6 +125,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .hero-text {
@@ -157,9 +158,20 @@ ul {
   background-color: var(--color-secondary);
 }
 
-.hero-icon svg {
-  max-width: 250px;
+/* The hero image replaces the icon in newer versions */
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 380px;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Sections */
@@ -190,9 +202,14 @@ p {
   gap: 2rem;
 }
 
-.about-image svg {
-  max-width: 200px;
+
+/* When using real images in the about section */
+.about-image img {
+  width: 100%;
+  max-width: 280px;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .about-text {
@@ -528,6 +545,28 @@ p {
   height: 50px;
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Gallery Section */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive */
