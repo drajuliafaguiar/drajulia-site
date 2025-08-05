@@ -275,6 +275,8 @@ p {
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
+  /* Add a subtle burgundy bar on top of each card to echo the site accent color */
+  border-top: 4px solid var(--color-primary);
 }
 
 .card:hover {
@@ -410,6 +412,7 @@ p {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
+  border-top: 4px solid var(--color-primary);
 }
 
 .step:hover {
@@ -448,6 +451,7 @@ p {
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
+  border-top: 4px solid var(--color-primary);
 }
 
 .audience-card:hover {
@@ -487,6 +491,7 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   position: relative;
   font-style: italic;
+  border-top: 4px solid var(--color-primary);
 }
 
 .testimonial .quote {
@@ -515,6 +520,7 @@ p {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
+  border-top: 4px solid var(--color-primary);
 }
 
 .blog-card:hover {
