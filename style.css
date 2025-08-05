@@ -19,6 +19,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--color-background);
   color: var(--color-text);
+  /* Prevent horizontal scrolling on small devices */
+  overflow-x: hidden;
 }
 
 /* Top bar */
@@ -592,5 +594,29 @@ p {
   }
   .contact-form button {
     width: 100%;
+  }
+}
+
+/* Extra small screens (e.g., smartphones) */
+@media (max-width: 480px) {
+  /* Reduce heading sizes for better readability */
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  /* Ensure call-to-action buttons span full width */
+  .cta-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  /* Adjust container padding on very small devices */
+  .container {
+    width: 95%;
   }
 }
