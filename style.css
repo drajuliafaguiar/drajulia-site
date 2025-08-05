@@ -6,6 +6,7 @@
   --color-accent: #c9a66b; /* soft gold */
   --color-light: #f5f5f5; /* very light grey */
   --color-text: #2c2c2c;
+  --color-highlight: #a6192e; /* highlight color same as primary */
 }
 
 /* Global reset */
@@ -203,6 +204,12 @@ h3 {
 p {
   margin-bottom: 1rem;
   font-size: 1rem;
+}
+
+/* Highlighted text in paragraphs and headings */
+.highlight {
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 /* About Section */
