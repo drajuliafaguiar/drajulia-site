@@ -54,6 +54,16 @@ body {
   height: 24px;
 }
 
+/* Menu toggle button hidden by default; will appear on small screens */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
   color: var(--color-secondary);
@@ -573,10 +583,11 @@ p {
 
 /* Responsive */
 @media (max-width: 768px) {
+  /* Keep the header in a single row on tablets and mobiles to avoid taking too much vertical space */
   .header-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
   }
   .main-nav ul {
     flex-direction: column;
@@ -594,6 +605,38 @@ p {
   }
   .contact-form button {
     width: 100%;
+  }
+
+  /* Show the menu toggle on small screens */
+  .menu-toggle {
+    display: block;
+  }
+  /* Hide the navigation by default; it will be toggled via JS */
+  .main-nav {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .main-nav.open {
+    display: block;
+  }
+  /* Stack nav links vertically */
+  .main-nav ul {
+    align-items: flex-start;
+  }
+  /* Reduce icon size in top bar */
+  .social-icons svg {
+    width: 20px;
+    height: 20px;
+  }
+  /* Reduce logo size */
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  /* Hide the top bar on smaller screens to maximize usable space */
+  .top-bar {
+    display: none;
   }
 }
 
@@ -618,5 +661,22 @@ p {
   /* Adjust container padding on very small devices */
   .container {
     width: 95%;
+  }
+
+  /* Further scale down social icons and logo */
+  .social-icons svg {
+    width: 18px;
+    height: 18px;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .menu-toggle {
+    font-size: 1.5rem;
+  }
+
+  /* On very small screens, hide the top bar entirely */
+  .top-bar {
+    display: none;
   }
 }
