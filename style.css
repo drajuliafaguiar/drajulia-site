@@ -738,3 +738,64 @@ p {
     display: none;
   }
 }
+
+/* ----------------------------------------------------------------------------
+   Zigzag layout for informational cards
+   To improve visual flow and break monotony, cards in the specialties, symptoms
+   and differentiators sections alternate the position of their icon and text.
+   On large screens, odd cards display icon left and text right, while even
+   cards reverse the order. On mobile, the layout stacks vertically for
+   readability.
+*/
+
+/* Base styles for cards in these sections */
+.specialties-section .cards-grid .card,
+.symptoms-section .cards-grid .card,
+.differentiators-section .cards-grid .card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* Allow content to wrap inside the card so text flows nicely next to icons */
+  flex-wrap: wrap;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Reverse layout for every second card */
+.specialties-section .cards-grid .card:nth-child(even),
+.symptoms-section .cards-grid .card:nth-child(even),
+.differentiators-section .cards-grid .card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Ensure icons keep their size and don’t shrink */
+.card .icon-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .icon-wrapper svg {
+  width: 64px;
+  height: 64px;
+}
+
+/* Hover effect on cards for subtle microinteraction */
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  /* Stack content vertically on tablets and mobiles */
+  .specialties-section .cards-grid .card,
+  .symptoms-section .cards-grid .card,
+  .differentiators-section .cards-grid .card {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  /* Add spacing below icon on small screens */
+  .card .icon-wrapper {
+    margin-bottom: 1rem;
+  }
+}
