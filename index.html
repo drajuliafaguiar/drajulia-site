@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- AOS animation library for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-RHXUu8wWyQsWa+EWpe4Vx5LQiHUY6pu+7ovIiHsXJdBAEJiCHp2tbZ0cl/Z0iVNdbp3KBgWywOtnBWn/fhPslg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- Top bar with quick contact and social links -->
@@ -42,6 +44,8 @@
     <header class="site-header">
       <div class="container header-wrapper">
         <h1 class="logo">Dra. Júlia Fernandes Aguiar<span class="divider">|</span> Cardiologista</h1>
+        <!-- Menu toggle button for small screens -->
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
         <nav class="main-nav">
           <ul>
             <li><a href="#inicio">Início</a></li>
@@ -79,6 +83,7 @@
         </div>
         <div class="about-text">
           <h3>Sobre a Dra. Júlia Fernandes Aguiar</h3>
+          <div class="red-divider"></div>
           <!-- Breve introdução seguida por lista de qualificações -->
           <p>
             Médica cardiologista dedicada a oferecer cuidado de excelência,
@@ -96,10 +101,16 @@
       </div>
     </section>
 
+    <!-- CTA after About Section -->
+    <div class="cta-after-section">
+      <a href="#agendamento" class="cta-button secondary" data-aos="fade-up">Agende sua consulta</a>
+    </div>
+
     <!-- Especialidades Section -->
     <section id="specialties" class="section specialties-section">
       <div class="container">
         <h3>Especialidades</h3>
+        <div class="red-divider"></div>
         <div class="cards-grid">
           <div class="card">
             <div class="icon-wrapper">
@@ -149,10 +160,16 @@
       </div>
     </section>
 
+    <!-- CTA after Especialidades Section -->
+    <div class="cta-after-section">
+      <a href="#sintomas" class="cta-button secondary" data-aos="fade-up">Conheça mais sobre essas doenças</a>
+    </div>
+
     <!-- Sintomas Section -->
     <section id="sintomas" class="section symptoms-section alt-bg">
       <div class="container">
         <h3>Sintomas e Indicações</h3>
+        <div class="red-divider"></div>
         <div class="cards-grid">
           <div class="card">
             <div class="icon-wrapper">
@@ -202,10 +219,16 @@
       </div>
     </section>
 
+    <!-- CTA after Sintomas Section -->
+    <div class="cta-after-section">
+      <a href="#diferenciais" class="cta-button secondary" data-aos="fade-up">Veja como prevenir</a>
+    </div>
+
     <!-- Diferenciais Section -->
     <section id="diferenciais" class="section differentiators-section">
       <div class="container">
         <h3>Por que escolher a Dra. Júlia?</h3>
+        <div class="red-divider"></div>
         <div class="cards-grid">
           <div class="card">
             <div class="icon-wrapper">
@@ -256,10 +279,16 @@
       </div>
     </section>
 
+    <!-- CTA after Diferenciais Section -->
+    <div class="cta-after-section">
+      <a href="#agendamento" class="cta-button secondary" data-aos="fade-up">Avaliação esportiva com segurança</a>
+    </div>
+
     <!-- Como Funciona Section -->
     <section id="como-funciona" class="section steps-section alt-bg">
       <div class="container">
         <h3>Como Funciona</h3>
+        <div class="red-divider"></div>
         <div class="steps-grid">
           <div class="step">
             <div class="step-icon">
@@ -303,6 +332,7 @@
     <section id="publico-alvo" class="section audience-section">
       <div class="container">
       <h3>Para quem é?</h3>
+      <div class="red-divider"></div>
       <div class="audience-grid">
         <div class="audience-card">
           <div class="audience-icon">
@@ -348,6 +378,7 @@
     <section id="depoimentos" class="section testimonials-section alt-bg">
       <div class="container">
         <h3>Depoimentos</h3>
+        <div class="red-divider"></div>
         <div class="testimonials-grid">
           <div class="testimonial">
             <p class="quote">“A Dra. Júlia é extremamente atenciosa e explicou tudo com clareza. Senti-me segura e acolhida desde o primeiro contato.”</p>
@@ -369,22 +400,30 @@
     <section id="blog" class="section blog-section">
       <div class="container">
         <h3>Artigos e Dicas</h3>
+        <div class="red-divider"></div>
         <div class="blog-grid">
-          <div class="blog-card">
+          <div class="blog-card" data-aos="fade-up">
+            <span class="blog-category">Prevenção</span>
             <h4>Alimentação saudável para um coração forte</h4>
             <p>Conheça os principais alimentos que ajudam a manter a saúde cardiovascular em dia.</p>
             <a href="#" class="read-more">Ler mais</a>
           </div>
-          <div class="blog-card">
+          <div class="blog-card" data-aos="fade-up">
+            <span class="blog-category">Emergências</span>
             <h4>Como reconhecer os sinais de infarto</h4>
             <p>Entenda os sintomas que exigem atenção imediata e saiba como agir em emergências.</p>
             <a href="#" class="read-more">Ler mais</a>
           </div>
-          <div class="blog-card">
+          <div class="blog-card" data-aos="fade-up">
+            <span class="blog-category">Atividade Física</span>
             <h4>Exercícios seguros para iniciantes</h4>
             <p>Dicas de atividades físicas adequadas para quem está começando a praticar exercícios.</p>
             <a href="#" class="read-more">Ler mais</a>
           </div>
+        </div>
+        <!-- CTA within Blog Section -->
+        <div class="cta-after-section">
+          <a href="#blog" class="cta-button secondary" data-aos="fade-up">Ver todos os artigos</a>
         </div>
       </div>
     </section>
@@ -393,6 +432,7 @@
     <section id="galeria" class="section gallery-section alt-bg">
       <div class="container">
         <h3>Galeria de Fotos</h3>
+        <div class="red-divider"></div>
         <div class="gallery-grid">
           <div class="gallery-item">
             <img src="images/gallery1.jpg" alt="Dra. Júlia estudando e trabalhando" />
@@ -428,6 +468,7 @@
     <section id="faq" class="section faq-section alt-bg">
       <div class="container">
         <h3>Perguntas Frequentes</h3>
+        <div class="red-divider"></div>
         <div class="faq-list">
           <details>
             <summary>Quando devo procurar um cardiologista?</summary>
@@ -449,6 +490,7 @@
     <section id="agendamento" class="section appointment-section">
       <div class="container appointment-wrapper">
         <h3>Agendamento de Consulta</h3>
+        <div class="red-divider"></div>
         <p>
           Cuidar do seu coração é essencial. Agende sua consulta e dê o primeiro
           passo para uma vida mais saudável.
@@ -462,6 +504,7 @@
     <section id="formulario" class="section form-section alt-bg">
       <div class="container">
         <h3>Formulário de Agendamento</h3>
+        <div class="red-divider"></div>
         <form class="contact-form" action="mailto:contato@exemplo.com" method="post" enctype="text/plain">
           <label for="nome">Nome completo</label>
           <input type="text" id="nome" name="Nome" required />
@@ -500,5 +543,19 @@
       </a>
     </div>
     <script src="script.js"></script>
+    <!-- AOS library for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-6Y6oUAt3zh3HKOAsoFM/c3IqbCGChjAkwo/WTKtfGTNcFN4SxCfL6cH2+Ho8dT1QeIYtC8WihQLnztL1U1hLgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      // Initialize AOS after DOM loaded
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.AOS) {
+          AOS.init({
+            once: true,
+            duration: 600,
+            offset: 80
+          });
+        }
+      });
+    </script>
   </body>
 </html>

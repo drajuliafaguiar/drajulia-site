@@ -581,6 +581,51 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Red accent divider used under section headings */
+.red-divider {
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* Generic CTA section wrapper */
+.cta-after-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Secondary CTA button style (red/dark) */
+.cta-button.secondary {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.cta-button.secondary:hover {
+  background-color: #8c1628;
+  transform: translateY(-2px);
+}
+
+/* Blog category label */
+.blog-category {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   /* Keep the header in a single row on tablets and mobiles to avoid taking too much vertical space */
