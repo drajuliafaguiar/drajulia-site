@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css" />
     <!-- AOS animation library for scroll animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-RHXUu8wWyQsWa+EWpe4Vx5LQiHUY6pu+7ovIiHsXJdBAEJiCHp2tbZ0cl/Z0iVNdbp3KBgWywOtnBWn/fhPslg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lightbox library for gallery zoom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
   </head>
   <body>
     <!-- Top bar with quick contact and social links -->
@@ -53,7 +55,7 @@
             <li><a href="#specialties">Especialidades</a></li>
             <li><a href="#sintomas">Sintomas</a></li>
             <li><a href="#diferenciais">Diferenciais</a></li>
-            <li><a href="#agendamento">Agendamento</a></li>
+            <li><a href="#agendamento" class="cta-link">Agendamento</a></li>
           </ul>
         </nav>
       </div>
@@ -105,6 +107,60 @@
     <div class="cta-after-section">
       <a href="#agendamento" class="cta-button secondary" data-aos="fade-up">Agende sua consulta</a>
     </div>
+
+    <!-- Formação e Reconhecimento Section -->
+    <section id="formacao" class="section trust-section">
+      <div class="container">
+        <h3>Formação e Reconhecimento</h3>
+        <div class="red-divider"></div>
+        <div class="trust-grid">
+          <div class="trust-item" data-aos="fade-up">
+            <div class="trust-icon">
+              <!-- Sírio-Libanês abstract logo icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <polygon points="32,4 38,24 60,24 42,36 48,56 32,44 16,56 22,36 4,24 26,24" fill="#023E8A" />
+                <circle cx="32" cy="32" r="6" fill="#C9A66B" />
+              </svg>
+            </div>
+            <h4>Hospital Sírio-Libanês</h4>
+            <p>Cardiologista (RQE 140945)</p>
+          </div>
+          <div class="trust-item" data-aos="fade-up">
+            <div class="trust-icon">
+              <!-- InCor icon (heart with pulse) -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <path d="M32 56s20-12 20-30c0-8-6-14-14-14-4.6 0-9 2.5-11 6-2-3.5-6.4-6-11-6-8 0-14 6-14 14 0 18 20 30 20 30l10 6z" fill="#A6192E" />
+                <polyline points="24,32 28,38 32,28 38,40 44,32" fill="none" stroke="#C9A66B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h4>InCor – HCFMUSP</h4>
+            <p>Fellow em Síndromes Coronarianas Crônicas</p>
+          </div>
+          <div class="trust-item" data-aos="fade-up">
+            <div class="trust-icon">
+              <!-- SBC icon (heart + book) -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <path d="M32 56s20-12 20-30c0-8-6-14-14-14-4.8 0-9 2.4-11.3 6C23 14.4 18.8 12 14 12 6.2 12 0 18.4 0 26c0 18 20 30 20 30l12 6z" fill="#023E8A" />
+                <rect x="28" y="28" width="8" height="12" fill="#C9A66B" />
+              </svg>
+            </div>
+            <h4>SBC</h4>
+            <p>Membro da Sociedade Brasileira de Cardiologia</p>
+          </div>
+        </div>
+        <ul class="titles-list" data-aos="fade-up">
+          <li><strong>Cardiologista</strong> pelo Hospital Sírio‑Libanês (RQE 140945)</li>
+          <li><strong>Residência em Clínica Médica</strong> pela Santa Casa de Montes Claros (RQE 125309)</li>
+          <li><strong>Fellow em Síndromes Coronarianas Crônicas</strong> no InCor – HCFMUSP</li>
+          <li><strong>Membro</strong> da Sociedade Brasileira de Cardiologia (SBC)</li>
+          <li>Aprimoramento constante com participação em congressos e cursos internacionais</li>
+        </ul>
+        <div class="cta-after-section" data-aos="fade-up">
+          <!-- Link to the Lattes curriculum with target blank so it opens in a new tab -->
+          <a href="https://lattes.cnpq.br/" target="_blank" class="cta-button secondary">Currículo Lattes</a>
+        </div>
+      </div>
+    </section>
 
     <!-- Especialidades Section -->
     <!-- Added alt-bg to alternate background color for better section separation -->
@@ -439,30 +495,51 @@
         <div class="red-divider"></div>
         <div class="gallery-grid">
           <div class="gallery-item" data-aos="zoom-in">
-            <img src="images/gallery1.jpg" alt="Dra. Júlia estudando e trabalhando" />
+            <a href="images/gallery1.jpg" data-lightbox="galeria" data-title="Dra. Júlia estudando e trabalhando">
+              <img src="images/gallery1.jpg" alt="Dra. Júlia estudando e trabalhando" />
+            </a>
+            <p class="gallery-caption">Dra. Júlia estudando e trabalhando</p>
           </div>
           <div class="gallery-item" data-aos="zoom-in">
-            <img src="images/gallery2.jpg" alt="Dra. Júlia com estetoscópio sorridente" />
+            <a href="images/gallery2.jpg" data-lightbox="galeria" data-title="Dra. Júlia com estetoscópio sorridente">
+              <img src="images/gallery2.jpg" alt="Dra. Júlia com estetoscópio sorridente" />
+            </a>
+            <p class="gallery-caption">Dra. Júlia com estetoscópio sorridente</p>
           </div>
           <div class="gallery-item" data-aos="zoom-in">
-            <img src="images/gallery3.jpg" alt="Detalhe de estudo de cardiologia" />
+            <a href="images/gallery3.jpg" data-lightbox="galeria" data-title="Detalhe de estudo de cardiologia">
+              <img src="images/gallery3.jpg" alt="Detalhe de estudo de cardiologia" />
+            </a>
+            <p class="gallery-caption">Detalhe de estudo de cardiologia</p>
           </div>
           <div class="gallery-item" data-aos="zoom-in">
-            <img src="images/gallery4.jpg" alt="Dra. Júlia em pose elegante" />
+            <a href="images/gallery4.jpg" data-lightbox="galeria" data-title="Dra. Júlia em pose elegante">
+              <img src="images/gallery4.jpg" alt="Dra. Júlia em pose elegante" />
+            </a>
+            <p class="gallery-caption">Dra. Júlia em pose elegante</p>
           </div>
           <!-- Foto adicional com jaleco e estetoscópio em forma de coração -->
           <div class="gallery-item" data-aos="zoom-in">
-            <img src="images/gallery5.jpg" alt="Dra. Júlia com estetoscópio em forma de coração" />
+            <a href="images/gallery5.jpg" data-lightbox="galeria" data-title="Dra. Júlia com estetoscópio em forma de coração">
+              <img src="images/gallery5.jpg" alt="Dra. Júlia com estetoscópio em forma de coração" />
+            </a>
+            <p class="gallery-caption">Dra. Júlia com estetoscópio em forma de coração</p>
           </div>
 
           <!-- Foto adicional de Dra. Júlia em jaleco com mão no bolso -->
           <div class="gallery-item" data-aos="zoom-in">
-            <img src="images/gallery6.jpg" alt="Dra. Júlia em jaleco com mão no bolso" />
+            <a href="images/gallery6.jpg" data-lightbox="galeria" data-title="Dra. Júlia em jaleco com mão no bolso">
+              <img src="images/gallery6.jpg" alt="Dra. Júlia em jaleco com mão no bolso" />
+            </a>
+            <p class="gallery-caption">Dra. Júlia em jaleco com mão no bolso</p>
           </div>
 
           <!-- Foto adicional de Dra. Júlia com estetoscópio em forma de coração segurado -->
           <div class="gallery-item" data-aos="zoom-in">
-            <img src="images/gallery7.jpg" alt="Dra. Júlia com estetoscópio em forma de coração segurado" />
+            <a href="images/gallery7.jpg" data-lightbox="galeria" data-title="Dra. Júlia com estetoscópio em forma de coração segurado">
+              <img src="images/gallery7.jpg" alt="Dra. Júlia com estetoscópio em forma de coração segurado" />
+            </a>
+            <p class="gallery-caption">Dra. Júlia com estetoscópio em forma de coração segurado</p>
           </div>
         </div>
       </div>
@@ -530,10 +607,33 @@
     <!-- Footer -->
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; 2025 Dra. Júlia Fernandes Aguiar – Todos os direitos reservados.</p>
-        <div class="footer-contact">
-          <p>Email: contato@exemplo.com | Telefone: (11) 99999‑9999 | WhatsApp: (11) 99999‑9999</p>
-          <p>Endereço: Avenida Paulista, 1000 – São Paulo – SP</p>
+        <div class="footer-grid">
+          <div class="footer-info">
+            <p>&copy; 2025 Dra. Júlia Fernandes Aguiar – Todos os direitos reservados.</p>
+          </div>
+          <div class="footer-contact">
+            <p><a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+            <p><a href="tel:+5511999999999">(11) 99999‑9999</a></p>
+            <p><a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Dra.%20J%C3%BAlia,%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">WhatsApp: (11) 99999‑9999</a></p>
+            <p><a href="https://www.google.com/maps?q=Avenida+Paulista+1000+S%C3%A3o+Paulo" target="_blank">Avenida Paulista, 1000 – São Paulo – SP</a></p>
+          </div>
+          <div class="footer-social">
+            <!-- Instagram icon -->
+            <a href="https://instagram.com/drajuliafaguiar" target="_blank" aria-label="Instagram">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" fill="#E4405F" />
+                <circle cx="12" cy="12" r="5" stroke="#fff" stroke-width="2" fill="none" />
+                <circle cx="17.5" cy="6.5" r="1.5" fill="#fff" />
+              </svg>
+            </a>
+            <!-- WhatsApp icon -->
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Dra.%20J%C3%BAlia,%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" aria-label="WhatsApp">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.46 1.34 4.99L2 22l5.12-1.34c1.49.8 3.17 1.23 4.88 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.5 2.04 12 2.04z" fill="#25D366" />
+                <path d="M17.15 14.78c-.24-.12-1.45-.72-1.67-.8-.22-.08-.38-.12-.54.12-.16.24-.62.8-.76.96-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.18-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.38.1-.5.1-.1.24-.24.36-.36.12-.12.16-.2.24-.32.08-.12.04-.24-.02-.36-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42-.14 0-.3-.02-.46-.02-.16 0-.38.06-.58.28-.2.22-.76.74-.76 1.8s.78 2.08.88 2.22c.1.14 1.54 2.34 3.74 3.28 2.2.94 2.2.62 2.6.58.4-.04 1.3-.54 1.48-1.06.18-.52.18-.96.12-1.06-.06-.1-.22-.16-.46-.28z" fill="#fff" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
@@ -549,6 +649,8 @@
     <script src="script.js"></script>
     <!-- AOS library for scroll animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-6Y6oUAt3zh3HKOAsoFM/c3IqbCGChjAkwo/WTKtfGTNcFN4SxCfL6cH2+Ho8dT1QeIYtC8WihQLnztL1U1hLgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Lightbox JS for gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
     <script>
       // Initialize AOS after DOM loaded
       document.addEventListener('DOMContentLoaded', function () {
